@@ -654,17 +654,54 @@ footer {
     height: 342px;
   }
 }
-@media (max-width:456px) {
-    .section3-img img {
-        width: 200px;
-        height: 200px;
-    }
-    .head-logo a img {
-        width: 100px;
-        margin-left: 20px;
-    }
-    .section1 img {
-        width: 200px;
-        height: 200px;
-    }
+@media (max-width: 456px) {
+  .section3-img img {
+    width: 200px;
+    height: 200px;
+  }
+  .head-logo a img {
+    width: 100px;
+    margin-left: 20px;
+  }
+  .section1 img {
+    width: 200px;
+    height: 200px;
+  }
+  .section3-title h3 {
+    font-size: 32px;
+  }
+  .section3-title p {
+    width: 200px;
+  }
+}
+@media (max-width: 390px) {
+  .section1 img {
+    width: 100px;
+    height: 100px;
+  }
+  .archa-title {
+    width: 200px;
+  }
+  .archa-title h1 {
+    font-size: 20px;
+  }
+  .archa-title p {
+    font-size: 12px;
+    width: 300px;
+  }
+  .archa-title button {
+    width: 104px;
+    height: 34px;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  .section4 h5 {
+    font-size: 32px;
+  }
+  .section5 h6 {
+    font-size: 32px
+  }
+  .new-gift {
+    width: 200px;
+  }
 }

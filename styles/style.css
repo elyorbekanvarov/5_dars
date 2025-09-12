@@ -155,7 +155,7 @@ ul li {
   gap: 88px;
 }
 .section3-title {
-  width: 372px;
+  max-width: 372px;
 }
 .section3-title h3 {
   font-weight: 600;
@@ -233,7 +233,7 @@ ul li {
   gap: 40px;
   margin-top: 64px;
   flex-wrap: wrap;
-  width: 720px;
+  max-width: 720px;
   justify-self: center;
 }
 .gift {
@@ -547,7 +547,7 @@ footer {
     justify-content: center;
   }
   .gift .gift-img {
-    width: 240px;
+    max-width: 240px;
     height: 240px;
   }
   .gift-title {
@@ -560,7 +560,7 @@ footer {
     font-size: 32px;
   }
   .yurakcha img {
-    width: 40px;
+    max-width: 40px;
     height: 40px;
   }
   .section2 .gives {
@@ -586,7 +586,7 @@ footer {
 }
 @media (max-width: 666px) {
   .gift {
-    width: 200px !important;
+    max-width: 200px !important;
     height: 247px !important;
   }
   .gift-img {
@@ -594,7 +594,7 @@ footer {
     height: 120px !important;
   }
   .yurakcha img {
-    width: 20px;
+    max-width: 20px;
     height: 20px;
   }
   .gift-title span {
@@ -610,7 +610,7 @@ footer {
     justify-content: center;
   }
   .big-card {
-    width: 300px;
+    max-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -627,10 +627,10 @@ footer {
     font-size: 20px;
   }
   .card-title input {
-    width: 200px;
+    max-width: 200px;
   }
   .card-title input::placeholder {
-    width: 200px;
+    max-width: 200px;
   }
   .card-img {
     display: none;
@@ -650,37 +650,37 @@ footer {
     flex-direction: column;
   }
   .section1 img {
-    width: 400px;
+    max-width: 400px;
     height: 342px;
   }
 }
 @media (max-width: 456px) {
   .section3-img img {
-    width: 200px;
+    max-width: 200px;
     height: 200px;
   }
   .head-logo a img {
-    width: 100px;
+    max-width: 100px;
     margin-left: 20px;
   }
   .section1 img {
-    width: 200px;
+    max-width: 200px;
     height: 200px;
   }
   .section3-title h3 {
     font-size: 32px;
   }
   .section3-title p {
-    width: 200px;
+    max-width: 200px;
   }
 }
 @media (max-width: 390px) {
   .section1 img {
-    width: 100px;
+    max-width: 100px;
     height: 100px;
   }
   .archa-title {
-    width: 200px;
+    max-width: 200px;
   }
   .archa-title h1 {
     font-size: 20px;
@@ -690,8 +690,9 @@ footer {
     width: 300px;
   }
   .archa-title button {
-    width: 104px;
+    max-width: 104px;
     height: 34px;
+    width: 100%;
     margin-top: 20px;
     font-size: 10px;
   }
@@ -702,6 +703,6 @@ footer {
     font-size: 32px
   }
   .new-gift {
-    width: 200px;
+    max-width: 200px;
   }
 }

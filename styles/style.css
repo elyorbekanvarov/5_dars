@@ -1,8 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root {
+  --color-red--: #d42b39;
+  --color-light-red--: #db4d59;
+
+  --text-white: #f3f2f2;
+  --text-gray: #c2bdbd;
+  --text-dark: #000;
+
+  --color-body--: #251819;
+  --color-container: #2f2223;
+}
+
+.light-mode {
+  --color-body--: #ffffff;
+  --color-container: #f5f5f5;
+
+  --text-white: #000000;
+  --text-gray: #444444;
+
+  --color-light-red--: #ff4a57;
+}
+
+body {
+  background-color: var(--color-body--);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+.side-bar {
+  display: none;
+}
+
+.side-bar.show {
+  display: block !important;
+}
+
+html,
+body {
+  font-family: "Poppins";
+  overflow-x: hidden;
 }
 button {
   border: none;
@@ -22,7 +63,10 @@ a {
   text-decoration: none;
 }
 body {
-  background-color: #251819;
+  background-color: var(--color-body--);
+}
+.hidden {
+  display: none;
 }
 .container {
   max-width: 1008px;
@@ -30,6 +74,26 @@ body {
   width: 100%;
   padding-right: 20px;
   padding-left: 20px;
+}
+.side-bar-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.side-bar {
+  background-image: url('../images/side-bar.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+  display: none;
+}
+.side-bar-links a {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 15px;
+  color: var(--text-white);
 }
 header {
   padding: 24px 0px;
@@ -72,7 +136,7 @@ ul li {
   width: 204px;
   height: 64px;
   border-radius: 64px;
-  background-color: #dc3845;
+  background-color: var(--color-light-red--);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +146,7 @@ ul li {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: white;
+  color: var(--color-light-black--);
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
@@ -138,7 +202,7 @@ ul li {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  color: #f3f2f2;
+  color: var(--color-light-black--);
 }
 .give-title p {
   font-weight: 400;
@@ -176,7 +240,7 @@ ul li {
   width: 215px;
   height: 56px;
   border-radius: 64px;
-  background-color: #dc3845;
+  background-color: var(--color-light-red--);
   color: #ffffff;
   font-weight: 500;
   font-style: Medium;
@@ -319,7 +383,7 @@ ul li {
   bottom: 0;
   width: 36px;
   height: 36px;
-  background-color: white;
+  background-color: var(--color-light-black--);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,13 +396,13 @@ ul li {
 .new-gift-title span {
   font-weight: 600;
   font-size: 20px;
-  color: #f3f2f2;
+  color: var(--color-light-black--);
 }
 .new-gift-title p {
   font-weight: 500;
   font-style: Medium;
   font-size: 16px;
-  color: #c2bdbd;
+  color: var(--color-light-gray--);
   margin-top: 4px;
 }
 .nuqtalar {
@@ -356,7 +420,7 @@ ul li {
   align-items: center;
   gap: 65px;
   padding: 29px 121px 29.83px 152px;
-  background: #2f2223;
+  background: var(--color-body--);
   border-radius: 32px;
 }
 .card-title h2 {
@@ -366,13 +430,13 @@ ul li {
   line-height: 50px;
 }
 .card-title input {
-  background: #251819;
+  background: var(--color-body--);
   padding: 18px 110px 17px 24px;
   border-radius: 64px;
   margin-top: 24px;
 }
 .card-title button {
-  background: #dc3845;
+  background: var(--color-red--);
   width: 175px;
   height: 55px;
   display: flex;
@@ -425,19 +489,19 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #c2bdbd;
+  color: var(--color-light-gray--);
   margin-top: 14px;
   margin-bottom: 44px;
 }
 .f-desc-wrapper .f span {
   font-weight: 600;
   font-size: 20px;
-  color: #f3f2f2;
+  color: var(--color-light-black--);
 }
 .f-desc-wrapper .f p {
   font-weight: 400;
   font-size: 16px;
-  color: #c2bdbd;
+  color: var(--color-light-gray--);
   margin-bottom: 12px;
 }
 .p-wrapper,
@@ -462,16 +526,14 @@ footer {
 .f-text p {
   font-weight: 400;
   font-size: 12px;
-  color: #918889;
+  color: var(--color-light-gray--);
 }
-.bar i {
-  color: white;
-  cursor: pointer;
+.sun-and-bar {
+  display: none;
 }
-@media (max-width: 1280px) {
-  .bar {
-    display: none;
-  }
+.sun-and-bar .bar,
+.sun {
+  display: none;
 }
 @media (max-width: 900px) {
   .section1 {
@@ -640,9 +702,15 @@ footer {
   .site-nav-list {
     display: none;
   }
+  .sun-and-bar .sun,
   .bar {
-    display: block;
-    font-size: 20px;
+    display: block !important;
+  }
+  .sun-and-bar {
+    display: block !important;
+    display: flex !important;
+    gap: 16px !important;
+    align-items: center !important;
   }
   .section1 {
     display: flex;
@@ -700,7 +768,7 @@ footer {
     font-size: 32px;
   }
   .section5 h6 {
-    font-size: 32px
+    font-size: 32px;
   }
   .new-gift {
     max-width: 200px;

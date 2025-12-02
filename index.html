@@ -32,8 +32,9 @@
           <li>Celebrate</li>
           <li>Gifts</li>
           <li>New</li>
-          <a href="#">
+          <a id="light-btn" href="#">
             <img
+              id="moon"
               src="./images/moon.svg"
               alt="moon icon"
               width="20"
@@ -41,8 +42,27 @@
             />
           </a>
         </ul>
-        <div class="bar">
-          <i class="fa-solid fa-bars"></i>
+        <div class="sun-and-bar">
+          <div class="sun">
+            <img
+              id="sun"
+              src="./images/sun.svg"
+              alt="sun"
+              width="20"
+              height="20"
+            />
+          </div>
+          <div class="bar" id="menu-btn">
+            <img src="./images/bar.svg" alt="bar" width="20" height="20" />
+          </div>
+        </div>
+        <div class="side-bar">
+          <div class="side-bar-links">
+            <a href="#">Home</a>
+            <a href="#">Celebrate</a>
+            <a href="#">Gifts</a>
+            <a href="#">New</a>
+          </div>
         </div>
       </header>
       <main>
@@ -126,7 +146,8 @@
           <h5>Share A Gift</h5>
           <div class="gifts">
             <div class="gift">
-              <img class="gift-img"
+              <img
+                class="gift-img"
                 src="./images/pechenye.png"
                 alt="gift photo"
                 width="120"
@@ -146,7 +167,8 @@
               </div>
             </div>
             <div class="gift">
-              <img class="gift-img"
+              <img
+                class="gift-img"
                 src="./images/qalpoq.png"
                 alt="gift photo"
                 width="120"
@@ -166,7 +188,8 @@
               </div>
             </div>
             <div class="gift">
-              <img class="gift-img"
+              <img
+                class="gift-img"
                 src="./images/qand.png"
                 alt="gift photo"
                 width="120"
@@ -186,7 +209,8 @@
               </div>
             </div>
             <div class="gift">
-              <img class="gift-img"
+              <img
+                class="gift-img"
                 src="./images/kichik_archa.png"
                 alt="gift photo"
                 width="120"
@@ -206,7 +230,8 @@
               </div>
             </div>
             <div class="gift">
-              <img class="gift-img"
+              <img
+                class="gift-img"
                 src="./images/kichik_archa.png"
                 alt="gift photo"
                 width="120"
@@ -411,5 +436,6 @@
         </div>
       </footer>
     </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
